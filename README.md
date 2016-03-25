@@ -1,2 +1,2 @@
 # auservices-www
-Website for auservices
+Website for auservices project
