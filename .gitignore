@@ -37,3 +37,4 @@ typings/*
 botconfig.json
 app/*.js
 app/*.map
+css/*
