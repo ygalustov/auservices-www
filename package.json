@@ -1,0 +1,37 @@
+{
+  "name": "auservices-www",
+  "version": "1.0.0",
+  "description": "Australian services website",
+  "main": "app.js",
+  "scripts": {
+    "start": "concurrently \"npm run tsc\" \"npm run lite\" ",
+    "postinstall": "typings install",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ygalustov/auservices-www.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ygalustov/auservices-www/issues"
+  },
+  "homepage": "https://github.com/ygalustov/auservices-www#readme",
+  "keywords": [
+    "telegrambot",
+    "bot",
+    "webservice",
+    "Australian Services"
+  ],
+  "author": "Yury Galustov <ygalustov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.12",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.2",
+    "systemjs": "^0.19.24",
+    "zone.js": "^0.6.6"
+  }
+}
