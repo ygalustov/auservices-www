@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) Yury Galustov <ygalustov@gmail.com All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
 // Sass configuration
 var gulp = require("gulp");
 var sass = require("gulp-sass");
