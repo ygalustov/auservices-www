@@ -33,5 +33,20 @@
     "rxjs": "^5.0.0-beta.2",
     "systemjs": "^0.19.24",
     "zone.js": "^0.6.6"
+  },
+  "devDependencies": {
+    "clean-css": "^3.4.10",
+    "concurrently": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.4",
+    "gulp-live-server": "0.0.29",
+    "gulp-sass": "^2.2.0",
+    "gulp-tsc": "^1.1.5",
+    "jasmine": "^2.4.1",
+    "lite-server": "^2.1.0",
+    "node-sass": "^3.4.2",
+    "tslint": "^3.6.0",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.9"
   }
 }
