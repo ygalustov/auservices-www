@@ -19,20 +19,32 @@
   },
   "homepage": "https://github.com/ygalustov/auservices-www#readme",
   "keywords": [
-    "telegrambot",
-    "bot",
+    "chat bot",
+    "crawler",
+    "IoT",
     "webservice",
     "Australian Services"
   ],
   "author": "Yury Galustov <ygalustov@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "angular2": "^2.0.0-beta.12",
-    "es6-shim": "^0.35.0",
-    "reflect-metadata": "^0.1.2",
-    "rxjs": "^5.0.0-beta.2",
-    "systemjs": "^0.19.24",
-    "zone.js": "^0.6.6"
+    "@angular/common": "2.0.0-rc.5",
+    "@angular/compiler": "2.0.0-rc.5",
+    "@angular/core": "2.0.0-rc.5",
+    "@angular/forms": "0.3.0",
+    "@angular/http": "2.0.0-rc.5",
+    "@angular/platform-browser": "2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.5",
+    "@angular/router": "3.0.0-rc.1",
+    "@angular/upgrade": "2.0.0-rc.5",
+    "angular2-in-memory-web-api": "0.0.17",
+    "bootstrap": "^3.3.6",
+    "core-js": "^2.4.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "systemjs": "0.19.27",
+    "typescript": "^1.8.10",
+    "zone.js": "^0.6.12"
   },
   "devDependencies": {
     "clean-css": "^3.4.10",
@@ -46,7 +58,7 @@
     "lite-server": "^2.1.0",
     "node-sass": "^3.4.2",
     "tslint": "^3.6.0",
-    "typescript": "^1.8.9",
-    "typings": "^0.7.9"
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2"
   }
 }

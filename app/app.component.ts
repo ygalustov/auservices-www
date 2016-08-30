@@ -3,10 +3,21 @@
  * See LICENSE in the project root for license information.
  */
 
-import {Component} from "angular2/core";
+import {Component} from "@angular/core";
+import {OnInit} from "@angular/core";
+import {Utils} from "./Utils";
 
 @Component({
     selector: "app",
-    template: "<h1>Hello Australian Web Services</h1>"
+    templateUrl: "app/app.component.html"
 })
-export class AppComponent { }
+export class AppComponent implements OnInit {
+    public topMenuDisplay: string;
+
+    public title = "Tour of Heroes";
+    public hero = "Windstorm";
+
+    ngOnInit() {
+
+    }
+}
