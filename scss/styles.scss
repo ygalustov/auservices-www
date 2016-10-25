@@ -1,0 +1,52 @@
+@import "vars";
+
+body { 
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: $dark-gray;    
+}
+
+a {
+    color: $dark-gray;
+}
+
+.viewport {
+    margin: 0px auto;
+    width: 100%;
+
+    .about {
+        width: 1024px;
+        margin: 0px auto;
+        
+        .introduction {
+            margin: 10px;
+            padding-left: 100px;
+            
+            // background-image: url("../images/telegram.png");
+                        
+            background-repeat: no-repeat;
+            background-position: 10px 50%;
+        }
+
+        .introduction-telegram {
+            margin: 10px;
+            padding-left: 100px;
+            vertical-align: center;
+            
+            background-image: url("../images/telegram.png");
+                        
+            background-repeat: no-repeat;
+            background-position: 10px 50%;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .viewport {
+        .about {
+            width: 100% !important;
+            margin: initial !important;           
+        }
+    }
+}

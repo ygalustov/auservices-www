@@ -3,9 +3,9 @@
  * See LICENSE in the project root for license information.
  */
 
-import {Component} from "@angular/core";
-import {OnInit} from "@angular/core";
-import {Utils} from "./Utils";
+import { Component } from "@angular/core";
+import { OnInit } from "@angular/core";
+import { Utils } from "./Utils";
 
 @Component({
     selector: "app",
@@ -13,9 +13,6 @@ import {Utils} from "./Utils";
 })
 export class AppComponent implements OnInit {
     public topMenuDisplay: string;
-
-    public title = "Tour of Heroes";
-    public hero = "Windstorm";
 
     ngOnInit() {
 
