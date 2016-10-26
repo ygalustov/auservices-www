@@ -1,19 +1,14 @@
 @import "./vars";
 
 .header {
-    background-image: url("../images/bg2.png");
-    // height: 535px;
-    // background-repeat: no-repeat;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
     background-position: left top;
-    background-color: $orange-color;
-    padding: 0px;
-    margin: 0px;
-    display: block;
+    background-color: $darkblue-color;
     height: 437px;
     text-align: center;
     
     .top-menu {
-        text-align: center;
         background-color: rgba($white-color, 0.2);
         height: 128px;
 
@@ -53,90 +48,82 @@
     }
     
     .greetings {
-        width: 100% !important;
         height: 309px;
-        // margin: 10px;
         padding-bottom: 10px;
         color: $white-color;
-        display: block;
-        text-align: center;
-        
-        
-        .greetings1:before {
-            content: '\200B';
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         
         .greetings1 {
-            height: 70%;
+            flex-grow: 5;
+            max-width: 400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             font-size: 200%;
-            
-            .easy {
-                color: $orange-color;
+            margin: auto;
+            .text {
+                .expand {
+                    color: $orange-color;
+                }
             }
         }
         .greetings2 {
-            height: 10%;
+            flex-grow: 1;
+            max-width: 400px;
         }
-        .greetings3 {
-            height: 20%;
-        }
+    }
+}
+@media only screen and (max-width: 3980px) {
+    .header {
+        background-position: right top;
+    }
+}
+
+@media only screen and (max-width: 1980px) {
+    .header {
+        background-position: 50% top;
+    }
+}
+
+
+@media only screen and (max-width: 980px) {
+    .header {
+        background-position: -500px top;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .viewport {
-        .header {
-            .top-menu {      
-                .top-menu-tbl {
-                    width: 100% !important;
-                    margin: initial !important;
+    .header {
+        background-position: -800px top;
+
+        .top-menu {      
+            .top-menu-tbl {
+                width: 100% !important;
+                margin: initial !important;
+                
+                .top-menu-row {
+                        * {
+                        display: block !important;
+                    }
                     
-                    .top-menu-row {
-                            * {
-                            display: block !important;
-                        }
-                        
-                        .title {
-                            text-align: center !important;
-                        }
-                        
-                        .logo {
-                            width: 100%;
-                            background-image: url("../images/logo.png");
-                            height: 84px;
-                        }
+                    .title {
+                        text-align: center !important;
+                    }
+                    
+                    .logo {
+                        width: 100%;
+                        background-image: url("../images/logo.png");
+                        height: 84px;
                     }
                 }
             }
-            
-            .greetings {
-                height: 309px !important;
-                
-                .greetings1:before {
-                    // height: 10px !important;
-                    height: 100% !important;
-                }
-                .greetings1 {
-                    font-size: 150% !important;
-                    height: 65% !important;
-
-                    .center-text {
-                        display: inline-block;
-                        vertical-align: middle;
-                        line-height: normal;      
-                    }
-                }
-                
-                .greetings2 {
-                    height: 20% !important;
-                }
-                .greetings3 {
-                    height: 15% !important;
-                    margin-bottom: 10px;
-                }
+        }
+        
+        .greetings {
+            .greetings1 {
+                font-size: 150% !important;
             }
         }
     }

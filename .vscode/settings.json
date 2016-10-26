@@ -1,0 +1,24 @@
+/*
+ * Copyright (c) Yury Galustov <ygalustov@gmail.com All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.trimTrailingWhitespace": false,
+    "licenseInjector.owner": "Yury Galustov <ygalustov@gmail.com",
+    "licenseInjector.ignore": "node_modules,build",
+    
+    "files.exclude": {
+		"**/.git": true,
+		"**/.DS_Store": true,
+        "node_modules": true,
+        "typings": true,
+        "app/*.js": true,
+        "app/*.map": true,
+        "css": true
+	},
+
+    "tslint.exclude": ["typings", "node_modules"],
+    "jshint.enable": false
+}

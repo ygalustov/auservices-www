@@ -12,7 +12,7 @@ var spawn = require('child_process').spawn;
 gulp.task("sass", function () {
     gulp.src("./scss/*.scss")
         .pipe(sass())
-        .on("error", function () {
+        .on("error", function (error) {
             // If you want details of the error in the console
             console.log(error.toString());
 
