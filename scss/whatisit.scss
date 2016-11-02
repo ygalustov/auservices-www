@@ -1,0 +1,52 @@
+@import "./vars";
+
+.whatisit {
+    text-align: center;
+    font-size: 150%;
+    color: $gray-color;
+    margin-top: 20px;
+
+    hr {
+        border-color: $light-gray;
+        border-width: 1px;
+        width: 200px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+}
+
+.section-wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+
+    .section-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1440px;
+        width: 100%;
+
+        .cell {
+            width: 410px;
+            height: 200px;
+            margin: 0px;
+            text-align: center;
+            padding: 0px 4px;
+            // border: 1px solid;
+
+            .header {
+                margin-bottom: 20px;
+
+                .icon {
+                    color: $light-gray;
+                }
+            }
+
+            .details {
+                font-size: 80%;
+            }
+        }
+    }
+}
