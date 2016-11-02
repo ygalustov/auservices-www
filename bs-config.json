@@ -1,3 +1,5 @@
 {
-    "open": false
+    "open": false,
+    "files": ["./css/**/*.css", "./app/**/*.{html,js}"],
+    "injectChanges": true
 }

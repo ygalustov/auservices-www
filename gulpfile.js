@@ -5,24 +5,20 @@
 
 // Sass configuration
 var gulp = require("gulp");
+var watch = require('gulp-watch');
 var sass = require("gulp-sass");
 var cleanCSS = require("gulp-clean-css");
 var spawn = require('child_process').spawn;
 
-gulp.task("sass", function () {
+/*gulp.task("sass", function () {
     gulp.src("./scss/*.scss")
-        .pipe(sass())
-        .on("error", function (error) {
-            // If you want details of the error in the console
-            console.log(error.toString());
-
-            this.emit('end');
-        })
+        .pipe(watch('./scss/*.scss'))
+        .pipe(sass().on('error', sass.logError))
         .pipe(cleanCSS({ compatibility: 'ie8', debug: true }, function (details) {
             console.log(details.name + " (before/after): " + details.stats.originalSize + "/" + details.stats.minifiedSize);
         }))
         .pipe(gulp.dest("./css"));
-});
+});*/
 
 gulp.task('start-dev', function () {
     var ls = spawn('cmd', ["/c", "npm start"], { stdio: 'inherit' });
@@ -31,5 +27,13 @@ gulp.task('start-dev', function () {
         console.log('child process exited with code ' + code);
     });
 
-    gulp.watch("./scss/*.scss", ["sass"]);
+    // gulp.watch("scss/*.scss", ["sass"]);
+
+    gulp.src("scss/*.scss")
+        .pipe(watch('scss/*.scss', { base: "./scss"}))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(cleanCSS({ compatibility: 'ie8', debug: true }, function (details) {
+            console.log(details.name + " (before/after): " + details.stats.originalSize + "/" + details.stats.minifiedSize);
+        }))
+        .pipe(gulp.dest("./css"));
 });
